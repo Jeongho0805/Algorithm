@@ -1,7 +1,5 @@
 package _23년4월4째주;
 
-import org.w3c.dom.Node;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,13 +17,14 @@ public class Programmers_방의갯수 {
         /* 해당 노드와 해당 노드 이전의 노드 리스트 */
         HashMap<Node, List<Node>> map = new HashMap<>();
 
+
         Node curNode = new Node(0, 0);
         map.put(curNode, new ArrayList<>());
 
         int answer = 0;
 
         for (int arrow : arrows) {
-            for (int i = 0; i < 2; i++) { // 스케일업
+            for (int i = 0; i < 2; i++) { // 스케일업 (제일 중요한 개념)
                 int nextX = curNode.x + dx[arrow];
                 int nextY = curNode.y + dy[arrow];
                 Node nextNode = new Node(nextX, nextY);
@@ -61,6 +60,7 @@ public class Programmers_방의갯수 {
             this.y = y;
         }
 
+
         @Override
         public int hashCode() {
             return Objects.hash(this.x, this.y);
@@ -74,6 +74,8 @@ public class Programmers_방의갯수 {
             }
             return false;
         }
+
+
     }
 }
 

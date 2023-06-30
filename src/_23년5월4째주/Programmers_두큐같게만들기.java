@@ -28,7 +28,7 @@ public class Programmers_두큐같게만들기 {
         int maxCount = queue1.length + queue2.length;
         int count = 0;
 
-        while (count <= maxCount * 2) {
+        while (count <= maxCount * 2) { // maxCount일 경우 안되는 이유?
             if (sum1 < sum2) {
                 int num = queueTwo.poll();
                 queueOne.add(num);

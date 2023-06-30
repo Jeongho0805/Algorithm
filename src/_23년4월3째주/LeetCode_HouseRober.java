@@ -5,11 +5,19 @@ import java.util.Arrays;
 /**
  * 링크 - https://leetcode.com/problems/house-robber/
  */
+
+/**
+ *
+ * [2,7,9,3,1]
+ * [2,7,11,10,12]
+ *
+ *
+ */
 public class LeetCode_HouseRober {
     public int rob(int[] nums) {
         int[] dp = new int[nums.length];
         if (nums.length < 2) {
-            return Arrays.stream(nums).max().getAsInt();
+            return nums[0];
         }
 
         dp[0] = nums[0];
