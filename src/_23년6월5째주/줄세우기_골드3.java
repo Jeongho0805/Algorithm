@@ -10,6 +10,7 @@ import java.util.*;
  * https://www.acmicpc.net/problem/2252
  */
 public class 줄세우기_골드3 {
+
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
