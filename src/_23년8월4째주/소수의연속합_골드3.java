@@ -16,23 +16,31 @@ public class 소수의연속합_골드3 {
 
         boolean[] primes = new boolean[MAX_NUM + 1];
         List<Integer> primeList = new ArrayList<>();
+        /**
+         * 왜 밑에 로직으로는 4000000 이하의 모든 소수를 못구할까?
+         * -> 못구하는게 아니라 boolean 배열에 false인 것을 primeList에 넣어줘야한다..
+         */
         /* 왜 밑에 로직으로는 4000000 이하의 모든 소수를 못구할까? */
-//        for (int i=2; i*i<=MAX_NUM; i++) {
-//            if (!primes[i]) {
-//                primeList.add(i);
-//                for (int j=i*i; j<= MAX_NUM; j+=i) {
-//                    primes[j] = true;
-//                }
-//            }
-//        }
-        for (int i = 2; i <= MAX_NUM; i++) {
+        for (int i=2; i*i<=MAX_NUM; i++) {
             if (!primes[i]) {
-                primeList.add(i);
-                for (int j = i * 2; j <= MAX_NUM; j += i) {
+                for (int j=i*i; j<= MAX_NUM; j+=i) {
                     primes[j] = true;
                 }
             }
         }
+        for (int i=2; i<=MAX_NUM; i++) {
+            if (!primes[i]) {
+                primeList.add(i);
+            }
+        }
+//        for (int i = 2; i <= MAX_NUM; i++) {
+//            if (!primes[i]) {
+//                primeList.add(i);
+//                for (int j = i * 2; j <= MAX_NUM; j += i) {
+//                    primes[j] = true;
+//                }
+//            }
+//        }
 //        System.out.println(primeList.size());
         int[] count = new int[MAX_NUM + 1];
         for (int i=0; i<primeList.size(); i++) {
