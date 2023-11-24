@@ -15,6 +15,7 @@ public class HashSetTest {
         System.out.println(set1 == set2);
         System.out.println(set1.equals(set2));
 
+        StringBuilder sb = new StringBuilder();
 
     }
 }

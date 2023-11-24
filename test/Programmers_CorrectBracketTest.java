@@ -1,4 +1,4 @@
-import _23년3월1째주.Programmers_CorrectBracket;
+import _23년백준풀이._23년3월1째주.Programmers_CorrectBracket;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

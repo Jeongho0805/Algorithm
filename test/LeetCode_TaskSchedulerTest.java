@@ -1,4 +1,4 @@
-import _23년3월1째주.LeetCode_TaskScheduler;
+import _23년백준풀이._23년3월1째주.LeetCode_TaskScheduler;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
