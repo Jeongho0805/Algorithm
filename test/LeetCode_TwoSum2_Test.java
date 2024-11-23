@@ -1,4 +1,4 @@
-import _23년백준풀이._23년2월4쨰주.LeetCode_TwoSum2;
+import past._23년백준풀이._23년2월4쨰주.LeetCode_TwoSum2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

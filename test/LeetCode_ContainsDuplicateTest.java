@@ -1,4 +1,4 @@
-import _23년백준풀이._23년3월4째주.LeetCode_ContainsDuplicate;
+import past._23년백준풀이._23년3월4째주.LeetCode_ContainsDuplicate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
