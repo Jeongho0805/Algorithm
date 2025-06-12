@@ -1,4 +1,4 @@
-package boj2024.gold4;
+package past.boj2024.gold4;
 
 
 import java.io.BufferedReader;
